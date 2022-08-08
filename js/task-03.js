@@ -18,6 +18,6 @@ const listImages = document.querySelector('.gallery');
 listImages.style.display = 'grid';
 listImages.style.justifyItems = 'center';
 const imagesEl = images
-  .map(image => `<li><img src="${image.url}" alt="${image.alt}"></li>`)
+  .map(image => `<li><img src="${image.url}" alt="${image.alt}"  width="400"></li>`)
   .join('');
 listImages.insertAdjacentHTML('afterbegin', imagesEl);
